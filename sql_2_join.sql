@@ -3,16 +3,16 @@
 
 #
 # 1: Get the cities with a name starting with ping sorted by their population with the least populated cities first
-#
+SELECT * FROM CITY WHERE NAME LIKE 'PING%' ORDER BY POPULATION ASC;
 #
 # 2: Get the cities with a name starting with ran sorted by their population with the most populated cities first
-#
+SELECT * FROM CITY WHERE NAME LIKE 'RAN%' ORDER BY POPULATION DESC;
 #
 # 3: Count all cities
-#
+SELECT COUNT(*) FROM CITY;
 #
 # 4: Get the average population of all cities
-#
+SELECT AVG(Population) FROM CITY;
 #
 # 5: Get the biggest population found in any of the cities
 #
